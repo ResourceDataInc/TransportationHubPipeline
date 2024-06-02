@@ -1,0 +1,8 @@
+# Ignore generated files.
+venv/
+data/*.csv
+models/*.pickle
+__pycache__
+
+# Ignore any credential files.
+notebooks/credentials.txt
