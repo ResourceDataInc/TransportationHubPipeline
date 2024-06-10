@@ -14,6 +14,7 @@ from snowflake.connector import *
 PARENTDIR = os.path.dirname(os.path.realpath(__file__))
 DATADIR = os.path.join(PARENTDIR, "../data")
 DATABASE = "TRANSPORTATION_HUB.HUB"
+WAREHOUSE = "COMPUTE_WH"
 HOST = "szb57928.prod3.us-west-2.aws"
 TABLES = [
     "AGENCIES",
@@ -38,6 +39,9 @@ def main():
         account=HOST,
     )
     cur = con.cursor()
+
+    # Specify warehouse
+    cur.execute(f"USE WAREHOUSE {WAREHOUSE}")
 
     # Load each table in the tables list.
     for table in TABLES:
