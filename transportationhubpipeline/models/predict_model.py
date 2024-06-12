@@ -13,7 +13,7 @@ from flask import Flask, request
 
 # Set globals.
 PARENTDIR = os.path.dirname(os.path.realpath(__file__))
-MODELDIR = os.path.join(PARENTDIR, "../models")
+MODELDIR = os.path.join(PARENTDIR, "../../models")
 MODEL = "linear_regression.pickle"
 
 
@@ -33,7 +33,7 @@ def input_converter(json):
 
 # MAIN ########################################################################
 def create_app(test_config=None):
-    app = Flask("regression_api", instance_relative_config=True)
+    app = Flask("predict_model", instance_relative_config=True)
 
     @app.route("/")
     def get_index():
