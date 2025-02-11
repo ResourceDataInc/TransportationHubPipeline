@@ -4,7 +4,7 @@ This project is a proof-of-concept of how to execute a basic [machine learning p
 
 ```bash
 .
-├── data/                # Directory where pulled data goes.
+├── data/                # Directory where data goes.
 ├── docs/                
 ├── models/              # Directory where generated models go.
 ├── notebooks/           
@@ -44,7 +44,7 @@ Configures the username and password used when connecting to Snowflake.
 
 Pulls down data from Snowflake and creates a simple machine learning model.
 
-`$make deploy`
+`$make api`
 
 Deploys the toy model as a local API, which can take inputs and return predictions.
 
