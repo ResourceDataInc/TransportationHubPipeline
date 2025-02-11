@@ -25,9 +25,15 @@ deploy:
 all: data model
 
 # HELPERS #####################################################################
+test_api:
+	$(PYTHON_INTERPRETER) src/test_requests.py
+
 format:
 	venv/bin/python -m black src/*.py
 
 clean:
-	rm data/*.csv
-	rm models/*.pickle
+	rm -f data/external/*.csv
+	rm -f data/interim/*.csv
+	rm -f data/processed/*.csv
+	rm -f data/raw/*.csv
+	rm -f models/*.pickle
