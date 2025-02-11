@@ -12,7 +12,7 @@ from snowflake.connector import *
 
 # Set globals.
 PARENTDIR = os.path.dirname(os.path.realpath(__file__))
-DATADIR = os.path.join(PARENTDIR, "../data/raw")
+DATADIR = os.path.join(PARENTDIR, "../../data/raw")
 DATABASE = "TRANSPORTATION_HUB.HUB"
 WAREHOUSE = "COMPUTE_WH"
 HOST = "szb57928.prod3.us-west-2.aws"

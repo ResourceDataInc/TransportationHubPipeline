@@ -13,7 +13,7 @@ from flask import Flask, request
 
 # Set globals.
 PARENTDIR = os.path.dirname(os.path.realpath(__file__))
-MODELDIR = os.path.join(PARENTDIR, "../models")
+MODELDIR = os.path.join(PARENTDIR, "../../models")
 MODEL = "linear_regression.pickle"
 
 
