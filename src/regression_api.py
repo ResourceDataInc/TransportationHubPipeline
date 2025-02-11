@@ -35,10 +35,6 @@ def input_converter(json):
 def create_app(test_config=None):
     app = Flask("regression_api", instance_relative_config=True)
 
-    @app.route("/")
-    def get_index():
-        return "<p>Home Page</p>"
-
     @app.route("/api/v1/predict", methods=["POST"])
     def get_predict():
         # Process input JSON.

@@ -1,6 +1,9 @@
 # Ignore generated files.
 venv/
-data/*.csv
+data/external/*.csv
+data/interim/*.csv
+data/interim/*.csv
+data/raw/*.csv
 models/*.pickle
 __pycache__
 

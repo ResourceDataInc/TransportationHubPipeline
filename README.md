@@ -1,6 +1,6 @@
 # Transportation Hub Pipeline
 
-This project is a proof-of-concept of how to execute a basic machine learning pipeline.
+This project is a proof-of-concept of how to execute a basic [machine learning pipeline](https://cookiecutter-data-science.drivendata.org/v1/).
 
 ```bash
 .
@@ -8,17 +8,20 @@ This project is a proof-of-concept of how to execute a basic machine learning pi
 ├── docs/                # Directory where documentation goes.
 ├── models/              # Directory where generated models get placed.
 ├── notebooks/           # Directory where prototyping notebooks goes.
+├── references/          # Directory where visual aids go.
 ├── src/                 # Directory where source code goes.
 ├── Makefile
 ├── README.md
 └── requirements.txt
 ```
 
+
 ### Prerequisites
 
 * Linux or WSL
 * Python 3
 * [make](https://www.gnu.org/software/make/)
+
 
 ### Setup
 
@@ -33,6 +36,7 @@ $export PIPE_PW="your_password_here"
 
 Configures the username and password used when connecting to Snowflake.
 
+
 ### Basic Usage
 
 `$make all`
@@ -43,17 +47,17 @@ Pulls down data from Snowflake and creates a simple machine learning model.
 
 Deploys the toy model as a local API, which can take inputs and return predictions.
 
-### Advanced Usage
+`$make test_api`
 
-`$make data`
+Launch several test API calls, printing inputs and outputs.
 
-Pulls down data from Snowflake.
-    
-`$make model`
+### Architecture Sketch
 
-Generates a model from local data.
-    
-`$make clean`
+![pipeline_visual](references/pipeline_visual.png)
 
-Removes generated files (i.e., data, models, etc.)
 
+### Further Reading
+
+* [Machine Learning in Production: From Models to Products](https://mlip-cmu.github.io/book/01-introduction.html)
+
+* [Cookiecutter Data Science Template](https://cookiecutter-data-science.drivendata.org/)

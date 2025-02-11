@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split
 
 # Set globals.
 PARENTDIR = os.path.dirname(os.path.realpath(__file__))
-DATADIR = os.path.join(PARENTDIR, "../data")
+DATADIR = os.path.join(PARENTDIR, "../data/raw")
 MODELDIR = os.path.join(PARENTDIR, "../models")
 
 
