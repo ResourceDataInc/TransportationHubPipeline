@@ -4,13 +4,14 @@ This project is a proof-of-concept of how to execute a basic [machine learning p
 
 ```bash
 .
-├── data/                # Directory where pulled data gets placed.
-├── docs/                # Directory where documentation goes.
-├── models/              # Directory where generated models get placed.
-├── notebooks/           # Directory where prototyping notebooks goes.
-├── references/          # Directory where visual aids go.
+├── data/                # Directory where pulled data goes.
+├── docs/                
+├── models/              # Directory where generated models go.
+├── notebooks/           
+├── references/          
+├── reports/             
 ├── src/                 # Directory where source code goes.
-├── Makefile
+├── Makefile             # Runner for common operations.
 ├── README.md
 └── requirements.txt
 ```
